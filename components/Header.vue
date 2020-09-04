@@ -4,7 +4,7 @@
       <div class="uk-container uk-container-large">
         <nav uk-navbar>
           <div class="mobile-menu" uk-toggle="target: #offcanvas-reveal">
-            <svg width="28" height="11" viewBox="0 0 28 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="28" height="13" viewBox="0 0 28 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="28" height="2" rx="1" fill="white"/>
               <rect y="9" width="28" height="2" rx="1" fill="white"/>
             </svg>
@@ -51,6 +51,12 @@
           <div class="social-img"><img src="../assets/images/icon-tonymoly.svg" alt=""></div>
           <div class="social-text social-tonymoly-text uk-visible@s">
             <img src="../assets/images/icon-instagram.svg" alt=""> tonymoly_irkutsk
+          </div>
+        </div>
+        <div class="social-item" @click="handleClick('https://www.instagram.com/beehappy_pizza')">
+          <div class="social-img"><img src="../assets/images/icon-beehappy.svg" alt=""></div>
+          <div class="social-text uk-visible@s">
+            <img src="../assets/images/icon-instagram.svg" alt=""> beehappy_pizza
           </div>
         </div>
       </div>
@@ -108,7 +114,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 166px;
+    flex-wrap: wrap;
   }
   .social-item {
     display: flex;
@@ -138,16 +144,38 @@
     line-height: 19px;
     text-transform: uppercase;
     font-weight: 500;
+    margin-right: 30px;
 
     div {
-      padding: 3px 0 0 10px;
+      padding: 0 0 0 10px;
+    }
+  }
+
+  @media (max-width: 1263px) {
+    .social {
+      margin-top: -40px;
+    }
+    .social-item {
+      padding-top: 40px;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .mobile-menu {
+      display: flex;
+      align-items: center;
+    }
+    .social {
+      .social-item {
+        align-self: center;
+      }
+    }
+    .uk-navbar-center  {
+      display: none;
     }
   }
 
   @media (max-width: 576px) {
-    .mobile-menu {
-      display: flex;
-    }
     .header-bg {
       padding: 20px 0 50px;
     }
@@ -156,18 +184,17 @@
       padding-bottom: 50px;
     }
     .social {
-      height: auto;
-
+      margin-top: 0;
       .social-item {
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
         margin-right: 25px;
-        align-self: center;
       }
       .social-item:last-child {
         margin: 0;
       }
     }
-    .uk-accordion {
+    .uk-accordion  {
       display: none!important;
     }
   }

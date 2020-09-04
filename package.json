@@ -12,12 +12,15 @@
     "start pm2": "pm2 start ./.nuxt/dist/server.js --name together"
   },
   "dependencies": {
+    "vue": "^2.6.12",
+    "vue-server-renderer": "^2.6.12",
+    "vue-template-compiler": "^2.6.12",
     "nuxt": "^2.0.0",
     "uikit": "^3.3.7",
     "vue-meta": "^2.3.3"
   },
   "devDependencies": {
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2"
   }
 }

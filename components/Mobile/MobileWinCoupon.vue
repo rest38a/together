@@ -21,7 +21,7 @@
               <img src="../../assets/images/corner-right.svg" class="corner-right">
               Заказать доставку
             </a>
-            <div @click="handleClick" class="instagram-wrap">
+            <div @click="clickSite('https://instagram.com/sushistudio38')" class="instagram-wrap">
               <img src="../../assets/images/action-instagram.svg">
               <span class="order-text">sushistudio38</span>
             </div>
@@ -42,7 +42,7 @@
               <img src="../../assets/images/corner-right.svg" class="corner-right">
               Перейти на сайт
             </a>
-            <div @click="handleClick" class="instagram-wrap">
+            <div @click="clickSite('https://instagram.com/icepeople.irk')" class="instagram-wrap">
               <img src="../../assets/images/action-instagram.svg">
               <span class="order-text">icepeople.irk</span>
             </div>
@@ -70,7 +70,7 @@
               <img src="../../assets/images/corner-right.svg" class="corner-right">
               Перейти на сайт
             </a>
-            <div @click="handleClick" class="instagram-wrap">
+            <div @click="clickSite('https://instagram.com/tonymoly_irkutsk')" class="instagram-wrap">
               <img src="../../assets/images/action-instagram.svg">
               <span class="order-text">tonymoly_irkutsk</span>
             </div>
@@ -93,9 +93,30 @@
               <img src="../../assets/images/corner-right.svg" class="corner-right">
               Перейти на сайт
             </a>
-            <div @click="handleClick" class="instagram-wrap">
+            <div @click="clickSite('https://instagram.com/art_salon_irkutsk')" class="instagram-wrap">
               <img src="../../assets/images/action-instagram.svg">
               <span class="order-text">art_salon_irkutsk</span>
+            </div>
+          </div>
+          <hr>
+        </li>
+        <li class="accordion-item">
+          <a class="uk-accordion-title" href="#">Bee Happy</a>
+          <div class="uk-accordion-content">
+            <div class="text">
+              В доставке и ресторане Bee Happy при чеке от 500 ₽:
+            </div>
+            <div class="uk-column-1-1@s address">
+              <div class="address-item"><img src="../../assets/images/icon-map.svg">ул. Партизанская, 28</div>
+            </div>
+            <a class="button" @click="clickSite('https://beehappypizza.ru/')">
+              <img src="../../assets/images/corner-left.svg" class="corner-left">
+              <img src="../../assets/images/corner-right.svg" class="corner-right">
+              Перейти на сайт
+            </a>
+            <div @click="clickSite('https://instagram.com/beehappy_pizza')" class="instagram-wrap">
+              <img src="../../assets/images/action-instagram.svg">
+              <span class="order-text">beehappy_pizza</span>
             </div>
           </div>
           <hr>

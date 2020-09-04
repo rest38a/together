@@ -20,7 +20,7 @@
   import Ice from '~/components/tab/Ice';
   import Tony from '~/components/tab/Tony';
   import Art from '~/components/tab/Art';
-
+  import Beehappy from '~/components/tab/Beehappy';
   export default {
     name: "WinCoupon",
     data: () => ({
@@ -29,11 +29,12 @@
         { title: 'Ice People', component: 'Ice' },
         { title: 'TonyMoly', component: 'Tony' },
         { title: 'Арт Салон Красоты', component: 'Art' },
+        { title: 'Bee Happy', component: 'Beehappy' },
       ],
       currentComponent: 'Sushi'
     }),
     components: {
-        Sushi, Ice, Tony, Art
+        Sushi, Ice, Tony, Art, Beehappy
     },
     methods: {
       setTab (component) {
@@ -64,6 +65,14 @@
   .wrap-tab {
     margin-bottom: 50px;
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    .title {
+      font-size: 45px;
+      line-height: 68px;
+    }
+  }
+
   @media (max-width: 576px) {
     .block {
       margin-top: 35px;

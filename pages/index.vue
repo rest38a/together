@@ -15,7 +15,7 @@
 <script >
     import Header from "~/components/Header";
     import Action from "~/components/Action";
-    import WinCoupon from "~/components/WinСoupon";
+    import WinCoupon from "~/components/WinCoupon";
     import Podarok from "~/components/Podarok";
     import MobileWinCoupon from "~/components/Mobile/MobileWinCoupon";
     import MobilePodarok from "~/components/Mobile/MobilePodarok";

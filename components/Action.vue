@@ -7,11 +7,11 @@
           <h3>Один из 50.000 тысяч подарков может стать твоим!</h3>
           <p>
             Участвуй в акции WE ARE TOGETHER соверши покупку в ресторанах доставки или суши-барах сети Sushi Studio
-            <span class="instagram">@sushisudio38</span>, салонах красоты "Арт" <span class="instagram">@art_salon_irkutsk</span>, магазинах корейской косметики "TONY MOLY"
+            <span class="instagram">@sushisudio38</span>, пиццерии <span class="instagram">@beehappy_pizza</span>, салонах красоты "Арт" <span class="instagram">@art_salon_irkutsk</span>, магазинах корейской косметики "TONY MOLY"
             <span class="instagram">@tonymoly_irkutsk</span> или приходи на Ледовый крытый каток Ice People <span class="instagram">@icepeople.irk</span> получи свой победный купон,
             сотри защитный слой, и будь готов забрать свой подарок.
           </p>
-          <p class="time">Кол-во подарков ограничено, акция действует до <strong>30.05.2020</strong> года.</p>
+          <p class="time">Кол-во подарков ограничено, акция действует до <strong>30.11.2020</strong> года.</p>
         </div>
         <div class="uk-width-auto@m action-image uk-flex-first uk-flex-last@xl">
           <img src="../assets/images/action.svg" alt="">
@@ -50,7 +50,7 @@
   }
   @media (max-width: 576px) {
     .block {
-      padding-top: 70px;
+      padding-top: 0;
       margin-top: 2px;
 
       .title {

@@ -37,6 +37,16 @@
               <li v-for="(item, index) of art" :key="index"><span>{{ item }}</span></li>
             </ul>
           </div>
+          <hr>
+        </li>
+        <li class="accordion-item">
+          <a class="uk-accordion-title" href="#">Bee Happy</a>
+          <div class="uk-accordion-content">
+            <ul>
+              <li v-for="(item, index) of beehappy" :key="index"><span>{{ item }}</span></li>
+            </ul>
+          </div>
+          <hr>
         </li>
       </ul>
     </div>
@@ -88,7 +98,15 @@
         'Скидка 50%',
         'Билет на 500 ₽',
         'Билет на 1000 ₽'
-      ]
+      ],
+      beehappy: [
+        'Паста помадоро',
+        'Цезарь с цыплёнком салат',
+        'Пицца Маргарита',
+        'Комбо 900₽',
+        'Фокачча с песто и пармезаном',
+        'Фокачча с розмарином',        
+      ],
     })
   }
 </script>

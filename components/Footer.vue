@@ -25,6 +25,12 @@
             <div class="footer-block__text"><img src="../assets/images/icon-instagram.svg" alt=""> tonymoly_irkutsk</div>
           </div>
         </div>
+        <div class="footer-item" @click="handleClick('https://www.instagram.com/beehappy_pizza')">
+          <div class="footer-block">
+            <div class="footer-block__icon"><img src="../assets/images/footer-beehappy.svg" alt=""></div>
+            <div class="footer-block__text"><img src="../assets/images/icon-instagram.svg" alt=""> beehappy_pizza</div>
+          </div>
+        </div>
       </div>
     </div>
 </template>
@@ -68,7 +74,7 @@
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     .footer-bg {
       .footer {
         flex-direction: column;

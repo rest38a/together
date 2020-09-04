@@ -2,7 +2,7 @@
   <div id="podarok-list" class="block">
     <div class="uk-container uk-container-large">
       <h2 class="title">Список подарков</h2>
-      <div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center" uk-grid>
+      <div class="uk-grid-small uk-child-width-1-4@s uk-text-center" uk-grid>
         <div>
           <div class="podarok-block">
             <div class="img-wrap">
@@ -40,6 +40,16 @@
             </div>
             <ul>
               <li v-for="(item, index) of icepeople" :key="index"><span>{{ item }}</span></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="podarok-block">
+            <div class="img-wrap">
+              <img src="../assets/images/icon-big-beehappy.svg">
+            </div>
+            <ul>
+              <li v-for="(item, index) of beehappy" :key="index"><span>{{ item }}</span></li>
             </ul>
           </div>
         </div>
@@ -93,7 +103,15 @@
         'Скидка 50%',
         'Билет на 500 ₽',
         'Билет на 1000 ₽'
-      ]
+      ],
+      beehappy: [
+        'Паста помадоро',
+        'Цезарь с цыплёнком салат',
+        'Пицца Маргарита',
+        'Комбо 900₽',
+        'Фокачча с песто и пармезаном',
+        'Фокачча с розмарином',        
+      ],
     })
   }
 </script>
@@ -121,6 +139,11 @@
         color: #000000;
         font-size: 16px;
       }
+    }
+  }
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .uk-child-width-1-4\@s > * {
+      width: 50%;
     }
   }
   @media (max-width: 576px) {
